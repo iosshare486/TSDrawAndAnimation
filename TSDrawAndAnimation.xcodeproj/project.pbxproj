@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B266F0002177577F00844BA1 /* TSContextDrawClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266EFFF2177577F00844BA1 /* TSContextDrawClass.swift */; };
+		B266F00221775E8E00844BA1 /* DreawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F00121775E8E00844BA1 /* DreawView.swift */; };
 		B2AD04F421758AF500076941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD04F321758AF500076941 /* AppDelegate.swift */; };
 		B2AD04F621758AF500076941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD04F521758AF500076941 /* ViewController.swift */; };
 		B2AD04F921758AF500076941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AD04F721758AF500076941 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		B2AD04FE21758AF700076941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AD04FC21758AF700076941 /* LaunchScreen.storyboard */; };
 		B2AD050921758AF700076941 /* TSDrawAndAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD050821758AF700076941 /* TSDrawAndAnimationTests.swift */; };
 		B2AD051421758AF700076941 /* TSDrawAndAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD051321758AF700076941 /* TSDrawAndAnimationUITests.swift */; };
+		B2AD05232175C27700076941 /* CABasicAnimation + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD05222175C27700076941 /* CABasicAnimation + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B266EFFF2177577F00844BA1 /* TSContextDrawClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSContextDrawClass.swift; sourceTree = "<group>"; };
+		B266F00121775E8E00844BA1 /* DreawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreawView.swift; sourceTree = "<group>"; };
 		B2AD04F021758AF500076941 /* TSDrawAndAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSDrawAndAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AD04F321758AF500076941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2AD04F521758AF500076941 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		B2AD050F21758AF700076941 /* TSDrawAndAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSDrawAndAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AD051321758AF700076941 /* TSDrawAndAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSDrawAndAnimationUITests.swift; sourceTree = "<group>"; };
 		B2AD051521758AF700076941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2AD05222175C27700076941 /* CABasicAnimation + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CABasicAnimation + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,10 @@
 		B2AD04F221758AF500076941 /* TSDrawAndAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				B2AD05212175940600076941 /* Classes */,
 				B2AD04F321758AF500076941 /* AppDelegate.swift */,
 				B2AD04F521758AF500076941 /* ViewController.swift */,
+				B266F00121775E8E00844BA1 /* DreawView.swift */,
 				B2AD04F721758AF500076941 /* Main.storyboard */,
 				B2AD04FA21758AF700076941 /* Assets.xcassets */,
 				B2AD04FC21758AF700076941 /* LaunchScreen.storyboard */,
@@ -123,6 +131,15 @@
 				B2AD051521758AF700076941 /* Info.plist */,
 			);
 			path = TSDrawAndAnimationUITests;
+			sourceTree = "<group>";
+		};
+		B2AD05212175940600076941 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B2AD05222175C27700076941 /* CABasicAnimation + Extension.swift */,
+				B266EFFF2177577F00844BA1 /* TSContextDrawClass.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2AD04F621758AF500076941 /* ViewController.swift in Sources */,
+				B266F00221775E8E00844BA1 /* DreawView.swift in Sources */,
+				B2AD05232175C27700076941 /* CABasicAnimation + Extension.swift in Sources */,
 				B2AD04F421758AF500076941 /* AppDelegate.swift in Sources */,
+				B266F0002177577F00844BA1 /* TSContextDrawClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
