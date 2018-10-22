@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         
         let animationG = CAAnimationGroup()
         animationG.duration = 4
-        animationG.fillMode = kCAFillModeForwards
+        animationG.fillMode = CAMediaTimingFillMode.forwards
         animationG.isRemovedOnCompletion = false
         animationG.animations = [opacityA,scalA,rotationA,positionA]
         
@@ -47,8 +47,8 @@ class ViewController: UIViewController {
         shapeLayer.path = path.cgPath
         shapeLayer.strokeColor = UIColor.green.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.lineCap = kCALineCapButt
-        shapeLayer.lineJoin = kCALineJoinRound
+        shapeLayer.lineCap = CAShapeLayerLineCap.butt
+        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
         
         shapeLayer.add(strokeA, forKey: "strokeAAA")
         

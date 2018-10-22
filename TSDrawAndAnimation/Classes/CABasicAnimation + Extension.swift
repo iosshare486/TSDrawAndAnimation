@@ -84,7 +84,7 @@ public extension CABasicAnimation {
         ///绘制动画只绘制一次。 并且绘制后移除。
         let strokeAnimation : CABasicAnimation = addAnimation(TSBasicAnimationKey.kStrokeEndAnimationKey, fromeValue, toValue, duration,1)
         strokeAnimation.isRemovedOnCompletion = true
-        strokeAnimation.fillMode = kCAFillModeRemoved
+        strokeAnimation.fillMode = CAMediaTimingFillMode.removed
         return strokeAnimation
     }
     
@@ -98,10 +98,10 @@ public extension CABasicAnimation {
         animation.duration = duration
         animation.fromValue = fromeValue
         animation.toValue = toValue
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         animation.repeatCount = repeatCount
         animation.isRemovedOnCompletion = false
-        animation.fillMode = kCAFillModeForwards
+        animation.fillMode = CAMediaTimingFillMode.forwards
         return animation
     }
 }

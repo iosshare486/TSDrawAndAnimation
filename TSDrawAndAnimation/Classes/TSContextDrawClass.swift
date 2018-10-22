@@ -187,9 +187,9 @@ public class TSContextDrawClass {
 //        para.lineBreakMode = NSLineBreakMode.byWordWrapping
 //        para.alignment = .center
 //
-        let textAttributes : [NSAttributedStringKey : Any] = [NSAttributedStringKey.font : font,
-                                                              NSAttributedStringKey.foregroundColor : color,
-                                                              NSAttributedStringKey.paragraphStyle : para]
+        let textAttributes : [NSAttributedString.Key : Any] = [NSAttributedString.Key.font : font,
+                                                               NSAttributedString.Key.foregroundColor : color,
+                                                               NSAttributedString.Key.paragraphStyle : para]
         
         let size = text.size(withAttributes: textAttributes)
         
